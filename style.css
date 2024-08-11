@@ -198,6 +198,11 @@ input[type=submit]{
         border-radius: 15px;
 
     }
+    & div:hover{
+        background-color: rgb(187, 183, 183);
+        border: 2px solid #000000;
+
+    }
     .btn{
         text-align: center;
         margin-top: 20px;
@@ -294,6 +299,13 @@ footer{
 
     .nav .img img{
         width: 160px;
+    }
+
+    .logos{
+        padding: 50px 20px;
+        & img{
+            margin-top: 38px;
+        }
     }
 
     .form{
