@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poetsen+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'inter';
+}
+ /*nav bar*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px 30px;
+    & ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        
+        & li{
+            display: inline;
+
+            & a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+
+    }
+    
+    .btn-group{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        
+        & button{
+            border-radius: 30px;
+            border: none;
+            padding: 10px;
+            font-weight: 700;
+            
+        }
+        & button:nth-child(2){
+            background-color: rgb(2, 2, 54);
+            color: aliceblue;
+        }
+        & img{
+            width: 25px;
+
+        }
+    }
+    .img img{
+        width: 200px;
+    }
+
+}
+
+
+/*body section*/
+
+.find{
+    background-color:#FFFFFF;
+    width: fit-content;
+    border-radius: 7px;
+    margin: auto;
+    padding: 10;
+    & h1{
+        text-align: center;
+    }
+}
+
+.form{
+    width: 50dvw;
+    
+    padding: 50px 25px;
+    
+    display: grid;
+    gap: 10px ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'select1 select2 select3 select4'
+    'input input input find'
+    ;
+    
+}
+select, input{
+    padding: 10px 5px;
+    background-color: #ECECEC;
+    border: none;
+    border-radius: 10px;
+}
+
+select:nth-child(1){
+    grid-area: select1;
+}
+select:nth-child(2){
+    grid-area: select2;
+}
+select:nth-child(3){
+    grid-area: select3;
+}
+select:nth-child(4){
+    grid-area: select4;
+}
+input[type=text]{
+    grid-area: input;
+}
+input[type=submit]{
+    grid-area: find;
+}
+.find-container{
+    background-image: url(images/Rectangle-1.png);
+    height: 760px;
+    background-size: cover;
+    
+}
+.bg-img{
+    width: fit-content;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*logo section*/
+.logos{
+    background-color: #FDE24F;
+    padding:40px 80px;
+    & img{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/*feature section*/
+.feature{ 
+    padding: 30px;
+    & p{
+        color: #535353;
+    }
+    
+    & button{
+        padding: 10px 19px;
+        background-color: transparent;
+        border-radius: 50px;
+        text-decoration: underline;
+        font-weight: 600;
+        
+    }
+    & button:hover{
+        background-color: rgb(38, 247, 55);
+        cursor: pointer;
+        color: #1f1b1b;
+        text-decoration: none;
+    }
+    .BTN{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    padding: 80px;
+    .item{
+        text-align: center;
+    }
+}
+
+/*Buy/ sell section*/
+.buy, .sell{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    
+
+    gap:15px;
+    width: 50%;
+    padding: 60px;
+    & div:first-child, div:nth-child(2), div:nth-child(3), div:nth-child(4){
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 8px;
+        
+        align-items: center;
+        border: 2px solid rgb(103, 105, 103);
+        border-radius: 15px;
+
+    }
+    .btn{
+        text-align: center;
+        margin-top: 20px;
+        
+        & button{
+            padding: 6px 10px;
+            border-radius: 6px;
+            background-color: #000;
+            color: white;
+            border: none;
+        }
+    }
+    
+    
+}
+.buy{
+    float: left;
+    border-right: 1px solid gray;
+}
+
+/*get started section*/
+.sbg{
+    background-color: #CFBAFF;
+    width: 100%;
+    height: 600px;
+    font-size: 75px;
+    font-weight: 500;
+    padding: 150px 100px;
+    text-align: center;
+
+    & button{
+        padding: 10px 20px;
+        font-size: 32px;
+        font-weight: 500;
+        background-color: #000000;
+        color: #fff;
+        margin-top: 50px;
+        border: none;
+        border-radius: 30px;
+    }
+}
+
+/*fotter section*/
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    padding: 40px 20px;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.footer-column a:hover {
+    color: #ece915;
+}
+.footer-column a:nth-child(2) {
+    margin-top: -8px;
+}
+.footer-logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*last section*/
+footer{
+    background-color: #000;
+    color: #fff;
+    line-height: 15.73px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px 40px;
+}
+
+/*responsive for mobile*/
+@media (max-device-width:767px) {
+    nav > .link{
+        display: none;
+    }
+
+    .form{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .buy{
+        float: none;
+        border: none;
+    }
+    .buy, .sell{
+        width: 100%;
+    }
+
+    .sbg{
+        font-size:40px ;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap:20px;
+    }
+    
+}
