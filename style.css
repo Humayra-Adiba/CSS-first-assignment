@@ -292,11 +292,23 @@ footer{
         display: none;
     }
 
+    .nav .img img{
+        width: 160px;
+    }
+
     .form{
         display:flex;
         flex-direction: column;
+        width: 100%;
     }
-
+    select, input{
+        width: 100%;
+    }
+    input[type=submit]:hover{
+        background-color: aquamarine;
+        color: #000;
+        font-weight: 600;
+    }
     .grid{
         display: flex;
         flex-direction: column;
@@ -311,7 +323,11 @@ footer{
     }
 
     .sbg{
-        font-size:40px ;
+        font-size:36px ;
+        padding: 70px 60px;
+        & button{
+            margin-top: 67px;
+        }
     }
 
     .footer{
