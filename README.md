@@ -5,4 +5,4 @@
 #### I know it's uncomplicated but...
 #### I also have a craving to be a smart *delveloper & programmer*
 
-(**Follow me on my github**)[https://github.com/Humayra-Adiba]
+<a href="https://github.com/Humayra-Adiba" target="_blank">Follow me on my github</a>
